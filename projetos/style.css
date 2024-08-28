@@ -1,7 +1,31 @@
-/* Importação de fontes */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-/* Variáveis de estilo */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); 
+
+.principal__logo {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    color: var(--cor-texto); 
+    text-transform: uppercase; 
+    letter-spacing: 0.1em; 
+    margin-right: auto; 
+    padding-left: 1em; 
+}
+
+.principal__header {
+    position: absolute;
+    top: 1em;
+    left: 1em; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    z-index: 2;
+}
+
+
+
 :root {
     --cor-texto: #ffffff; 
     --cor-fundo-escuro: #202020; 
@@ -47,7 +71,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    opacity: 0.5; 
+    opacity: 0.33; 
     z-index: -1; 
     max-height: 90%; 
 }
@@ -107,7 +131,7 @@ body {
 
 .container__aviso {
     font-size: 14px;
-    color: #a3a3a3;
+    color: #bebebe;
     margin-top: 1em;
 }
 
@@ -180,7 +204,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Dispositivos */
+
 .dispositivos {
     text-align: center;
     margin: 4em 0;
@@ -220,7 +244,7 @@ body {
 .rodape {
     padding: 3em 2em; 
     background-color: var(--cor-fundo-escuro); 
-    color: var(--cor-texto); 
+    color: #7943ee; 
     text-align: center;
     border-top: 4px solid var(--cor-botao-roxo); 
 }
@@ -228,24 +252,26 @@ body {
 .rodape__lista {
     display: flex;
     flex-wrap: wrap;
+    color:#7843ec;
     justify-content: center;
     list-style-type: none;
     padding: 0;
     margin-bottom: 2em; 
 }
 
-.lista__link {
-    color: var(--cor-texto); 
+.lista__link a {
+    color: #9969ff; 
     margin: 0 1em;
     font-size: 0.875rem;
     text-decoration: none;
     transition: color 0.3s, border-bottom 0.3s;
-    border-bottom: 2px solid transparent; 
+    border-bottom: 2px solid transparent;
 }
 
+
 .lista__link:hover {
-    color: var(--cor-botao-roxo); 
-    border-bottom: 2px solid var(--cor-botao-roxo); 
+    color: var(--cor-botao-roxo-claro); 
+    border-bottom: 2px solid var(--cor-botao-roxo-claro); 
 }
 
 .rodape__texto {
@@ -314,10 +340,10 @@ body {
     color: var(--cor-texto);
     border: none;
     border-radius: 5px;
-    padding: 0.3em 0.8em; 
+    padding: 0.6em 0.9em; 
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
-    font-size: 0.7rem; 
+    font-size: 0.9rem; 
     display: inline-block;
     order: 2; 
 }
