@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Ou qualquer cor de fundo que preferir */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #202020;
+}
+
+.carousel__inner {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1200px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel__item {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 0 10px;
+    color: #fff;
+    text-align: center;
+    background: #7345d6;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.carousel__item h2 {
+    margin-bottom: 0.5em;
+}

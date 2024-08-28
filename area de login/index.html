@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PulsePlay - Login</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="login">
+        <img class="seriesfundo" src="./img/varias series fundo.jpg" alt="Imagem de fundo">
+        <div class="login__container">
+            <div class="login__form-container" id="loginFormContainer">
+                <h1 class="login__titulo" id="formTitulo">Entrar na sua conta</h1>
+                <form class="login__form" id="loginForm">
+                    <div class="login__campo">
+                        <label for="loginEmail" class="login__label">Email</label>
+                        <input type="email" id="loginEmail" class="login__input" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="login__campo">
+                        <label for="loginSenha" class="login__label">Senha</label>
+                        <input type="password" id="loginSenha" class="login__input" placeholder="Digite sua senha" required>
+                    </div>
+                    <button type="submit" class="login__botao">Entrar</button>
+                    <a href="#" class="login__link" id="esqueciSenha">Esqueci minha senha</a>
+                    <a href="#" class="login__link" id="naoTemConta">Não tem uma conta? Crie uma agora</a>
+                </form>
+                <div class="login__criarConta" id="criarConta">
+                    <h2>Crie sua conta</h2>
+                    <form id="criarContaForm">
+                        <div class="login__campo">
+                            <label for="criarEmail" class="login__label">Email</label>
+                            <input type="email" id="criarEmail" class="login__input" placeholder="Digite seu email" required>
+                        </div>
+                        <button type="submit" class="login__botao" id="submitCriarConta">Criar Conta</button>
+                    </form>
+                </div>
+                <div class="login__redefinirSenha" id="redefinirSenha">
+                    <h2>Redefinir senha</h2>
+                    <p>Digite o endereço de e-mail que você usa na PulsePlay para enviarmos um link de redefinição de senha.</p>
+                    <form id="redefinirSenhaForm">
+                        <div class="login__campo">
+                            <label for="emailRedefinir" class="login__label">Endereço de e-mail</label>
+                            <input type="email" id="emailRedefinir" class="login__input" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <button type="submit" class="login__botao">Enviar</button>
+                        <button type="button" class="login__botao login__botao-cancelar" id="cancelarRedefinir">Cancelar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
