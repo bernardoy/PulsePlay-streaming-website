@@ -30,27 +30,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const prevButton = document.querySelector('.carrossel__botao--esquerda');
-    const nextButton = document.querySelector('.carrossel__botao--direita');
-    const slides = document.querySelector('.carrossel__slides');
-    const slideCount = slides.children.length;
-    let index = 0;
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.movie-card');
   
-    function updateCarousel() {
-      slides.style.transform = `translateX(-${index * 100}%)`;
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.transform = `translateX(${(i - index) * 100}%)`;
+    });
+  }
+  
+  function changeSlide(n) {
+    slideIndex += n;
+    if (slideIndex >= slides.length) {
+      slideIndex = 0;
     }
+    if (slideIndex < 0) {
+      slideIndex = slides.length - 1;
+    }
+    showSlide(slideIndex);
+  }
   
-    nextButton.addEventListener('click', function () {
-      index = (index + 1) % slideCount;
-      updateCarousel();
-    });
-  
-    prevButton.addEventListener('click', function () {
-      index = (index - 1 + slideCount) % slideCount;
-      updateCarousel();
-    });
-  
-    updateCarousel();
-  });
+  showSlide(slideIndex);
   

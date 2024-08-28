@@ -21,6 +21,8 @@
   align-items: center;
   gap: 2em;
   z-index: 2;
+  background-color: #202020;
+  margin-top: 15px;
 }
 
 :root {
@@ -72,6 +74,7 @@ body {
   opacity: 0.2;
   z-index: -1;
   max-height: 90%;
+  margin-top: 120px;
 }
 
 .container__caixa {
@@ -356,75 +359,58 @@ body {
   }
 }
 
-.filmes-em-alta {
+#high-movies {
+    background-color: #202020;
+    padding: 20px;
     text-align: center;
     margin: 4em 0;
     margin-top: 120px;
     margin-bottom: 120px;
-  }
-  
-  .filmes__titulo {
-    font-size: 2rem;
-    color: var(--cor-texto);
-    margin-bottom: 1em;
-  }
-  
-  .filmes__carrossel {
-    position: relative;
+}
+
+#high-movies .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movie-slider {
     display: flex;
-    align-items: center;
+    overflow-x: scroll;
+    gap: 15px;
+    scroll-behavior: smooth; 
+    padding-bottom: 20px;
+}
+
+.movie-slider::-webkit-scrollbar {
+    display: none; 
+}
+
+.movie-card {
+    flex: 0 0 300px;
+    border-radius: 10px;
     overflow: hidden;
-    max-width: 100%;
-  }
-  
-  .carrossel__container {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .carrossel__slides {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .carrossel__slide {
-    min-width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .carrossel__slide img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-  }
-  
-  .carrossel__botao {
-    background-color: var(--cor-botao-roxo);
-    border: none;
-    color: var(--cor-texto);
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0.8em 1.5em;
-    font-size: 14px;
-    margin: 0.5em 0;
-  }
-  
-  .carrossel__botao:hover {
-    background-color: var(--cor-botao-roxo-claro);
-  }
-  
-  .carrossel__botao--esquerda {
-    left: 10px;
-  }
-  
-  .carrossel__botao--direita {
-    right: 10px;
-  }
-  
+}
+
+#high-movies h2{
+    margin-bottom: 20px;
+}
+
+.movie-info {
+    padding: 10px;
+    background-color: #333;
+    text-align: center;
+}
 
 .faq {
     background-color: var(--cor-fundo-cinza);

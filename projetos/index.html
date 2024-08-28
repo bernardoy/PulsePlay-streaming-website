@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>PulsePlay</title>
   </head>
   <body>
@@ -81,9 +82,9 @@
         <h2 class="descricao__titulo">Procurou, achou!</h2>
         <p class="descricao__texto">
           Só o PulsePlay oferece
-          <span>o melhor conteúdo em um só lugar</span>. Assista suas
-          séries, animes e filmes preferidos em um só lugar. Com a PulsePlay,
-          você terá acesso a todos os seus conteúdos em um só lugar.
+          <span>o melhor conteúdo em um só lugar</span>. Assista suas séries,
+          animes e filmes preferidos em um só lugar. Com a PulsePlay, você terá
+          acesso a todos os seus conteúdos em um só lugar.
         </p>
         <a class="secundario__botao" href="#">Assine a PulsePlay</a>
       </div>
@@ -112,42 +113,66 @@
       </div>
     </section>
 
-    <section class="filmes-em-alta">
-        <h2 class="filmes__titulo">Filmes em Alta</h2>
-        <div class="filmes__carrossel">
-          <button class="carrossel__botao carrossel__botao--esquerda">&#10094;</button>
-          <div class="carrossel__container">
-            <div class="carrossel__slides">
-              <!-- Adicione suas imagens de filmes aqui -->
-              <div class="carrossel__slide"><img src="img/filme1.jpg" alt="Filme 1" /></div>
-              <div class="carrossel__slide"><img src="img/filme2.jpg" alt="Filme 2" /></div>
-              <div class="carrossel__slide"><img src="img/filme3.jpg" alt="Filme 3" /></div>
-              <!-- Continue adicionando mais slides conforme necessário -->
+    <section id="high-movies">
+        <div class="container">
+          <h2>Filmes em Alta</h2>
+          <div class="movie-slider">
+            <div class="movie-card">
+              <img src="./img/filme1.webp" alt="Filme 1" />
+              <div class="movie-info">
+                <h3>Filme 1</h3>
+              </div>
+            </div>
+            <div class="movie-card">
+              <img src="./img/filme2.webp" alt="Filme 2" />
+              <div class="movie-info">
+                <h3>Filme 2</h3>
+              </div>
+            </div>
+            <div class="movie-card">
+              <img src="./img/filme3.webp" alt="Filme 3" />
+              <div class="movie-info">
+                <h3>Filme 3</h3>
+              </div>
+            </div>
+            <div class="movie-card">
+              <img src="./img/filme4.webp" alt="Filme 4" />
+              <div class="movie-info">
+                <h3>Filme 4</h3>
+              </div>
             </div>
           </div>
-          <button class="carrossel__botao carrossel__botao--direita">&#10095;</button>
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
         </div>
       </section>
       
 
     <section class="faq">
-        <h2 class="faq__titulo">Perguntas Frequentes</h2>
-        <div class="faq__container">
-          <div class="faq__item">
-            <div class="faq__pergunta">Como posso assinar o PulsePlay?</div>
-            <div class="faq__resposta">
-              <p>Para assinar o PulsePlay, clique no botão "Assine o plano anual" ou "Assinar o plano mensal" em nossa página principal e siga as instruções.</p>
-            </div>
-          </div>
-          <div class="faq__item">
-            <div class="faq__pergunta">Qual é a política de cancelamento?</div>
-            <div class="faq__resposta">
-              <p>Você pode cancelar sua assinatura a qualquer momento através das configurações da sua conta. Para mais detalhes, consulte nossa política de cancelamento.</p>
-            </div>
+      <h2 class="faq__titulo">Perguntas Frequentes</h2>
+      <div class="faq__container">
+        <div class="faq__item">
+          <div class="faq__pergunta">Como posso assinar o PulsePlay?</div>
+          <div class="faq__resposta">
+            <p>
+              Para assinar o PulsePlay, clique no botão "Assine o plano anual"
+              ou "Assinar o plano mensal" em nossa página principal e siga as
+              instruções.
+            </p>
           </div>
         </div>
-      </section>
-      
+        <div class="faq__item">
+          <div class="faq__pergunta">Qual é a política de cancelamento?</div>
+          <div class="faq__resposta">
+            <p>
+              Você pode cancelar sua assinatura a qualquer momento através das
+              configurações da sua conta. Para mais detalhes, consulte nossa
+              política de cancelamento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="dispositivos">
       <h2 class="dispositivos__titulo">
