@@ -395,3 +395,23 @@ body {
 .principal__seletor-linguagem-select:hover option {
     display: block;
 }
+
+@media (max-width: 768px) {
+    .principal__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .secundario__imagem {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+    }
+}
