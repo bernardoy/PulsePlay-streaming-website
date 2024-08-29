@@ -46,3 +46,45 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'planos.html';
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.getElementById('loginForm');
+    const criarContaForm = document.getElementById('criarConta');
+    const redefinirSenhaForm = document.getElementById('redefinirSenha');
+    const esqueciSenhaLink = document.getElementById('esqueciSenha');
+    const naoTemContaLink = document.getElementById('naoTemConta');
+    const cancelarRedefinir = document.getElementById('cancelarRedefinir');
+    const submitCriarConta = document.getElementById('submitCriarConta');
+
+   
+    esqueciSenhaLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        loginForm.classList.remove('show');
+        redefinirSenhaForm.classList.add('show');
+    });
+
+
+    naoTemContaLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        loginForm.classList.remove('show');
+        criarContaForm.classList.add('show');
+    });
+
+
+    cancelarRedefinir.addEventListener('click', () => {
+        redefinirSenhaForm.classList.remove('show');
+        loginForm.classList.add('show');
+    });
+
+   
+    submitCriarConta.addEventListener('click', (e) => {
+        e.preventDefault();
+        criarContaForm.classList.remove('show');
+        loginForm.classList.add('show');
+    });
+
+    
+    loginForm.classList.add('show');
+});

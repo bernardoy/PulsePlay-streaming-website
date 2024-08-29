@@ -193,6 +193,46 @@ body {
     opacity: 0.5;
 }
 
+
+
+.login__form, .login__redefinirSenha, .login__criarConta {
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+}
+
+.login__form.show, .login__redefinirSenha.show, .login__criarConta.show {
+    display: flex;
+}
+
+
+.login__criarConta {
+    margin-top: 1em;
+}
+
+.login__redefinirSenha {
+    margin-top: 1em; 
+}
+
+.login__botao + .login__link {
+    margin-top: 1em; 
+}
+
+.login__botao-cancelar {
+    margin-top: 1em; 
+}
+
+
+.login__redefinirSenha button[type="submit"] {
+    margin-top: 1.5em;
+}
+
+
+.login__criarConta button[type="submit"] {
+    margin-top: 1.5em; 
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -217,3 +257,50 @@ body {
         font-size: 0.875rem;
     }
 }
+
+.rodape {
+    padding: 3em 2em;
+    background-color: var(--cor-fundo-escuro);
+    color: #7943ee;
+    text-align: center;
+    border-top: 4px solid var(--cor-botao-roxo);
+  }
+  
+  .rodape__lista {
+    display: flex;
+    flex-wrap: wrap;
+    color: #7843ec;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2em;
+  }
+  
+  .lista__link a {
+    color: #9969ff;
+    margin: 0 1em;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .lista__link:hover {
+    color: var(--cor-botao-roxo-claro);
+    border-bottom: 2px solid var(--cor-botao-roxo-claro);
+  }
+  
+  .rodape__texto {
+    font-size: 0.875rem;
+    color: #757575;
+    border-top: 1px solid var(--cor-fundo-cinza);
+    padding-top: 1em;
+  }
+
+  .rodape__texto {
+    font-size: 0.75rem;
+  }
+
+  .rodape__lista {
+    flex-direction: column;
+  }
