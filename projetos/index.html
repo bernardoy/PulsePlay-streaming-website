@@ -2,7 +2,10 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <title>PulsePlay</title>
@@ -10,8 +13,10 @@
   <body>
     <section class="principal">
       <div class="principal__header">
-        <div class="principal__logo">PulsePlay</div>
-        <a href="#" class="principal__botao-entrar">Fazer Login</a>
+        <div class="principal__logo" data-lang="logo">PulsePlay</div>
+        <a href="#" class="principal__botao-entrar" data-lang="login"
+          >Fazer Login</a
+        >
         <div class="principal__seletor-linguagem">
           <label
             for="seletor-linguagem"
@@ -34,24 +39,27 @@
         class="container__imagem"
       />
       <div class="container__caixa">
-        <h1 class="container__titulo">
+        <h1 class="container__titulo" data-lang="title">
           Assine o PulsePlay para aproveitar o serviço completo e acompanhar
           suas séries favoritas
         </h1>
-        <p class="container__texto">
+        <p class="container__texto" data-lang="description">
           Assista a PulsePlay e aproveite o melhor do streaming com dezenas de
           filmes, séries e lançamentos direto do cinema. Com o plano anual você
           parcela em até 12x de R$ 12,50/mês sem juros (R$ 150 por ano).
         </p>
         <div class="botoes-container">
-          <a class="container__botao" href="#"
+          <a class="container__botao" href="#" data-lang="annual-plan"
             >Assine o plano anual por 12x de R$ 12,50*</a
           >
-          <a class="container__botao botao__secundario" href="#"
+          <a
+            class="container__botao botao__secundario"
+            href="#"
+            data-lang="monthly-plan"
             >Assinar o plano mensal</a
           >
         </div>
-        <a class="container__aviso"
+        <a class="container__aviso" data-lang="price-notice"
           >*O preço pode variar caso a assinatura seja feita em outros
           planos.</a
         >
@@ -65,10 +73,10 @@
         class="secundario__imagem"
       />
       <div class="container__descricao">
-        <h2 class="descricao__titulo">
+        <h2 class="descricao__titulo" data-lang="watch-your-way">
           Assista do seu jeito, quando e onde quiser.
         </h2>
-        <p class="descricao__texto">
+        <p class="descricao__texto" data-lang="watch-your-way-description">
           Aproveite a tela grande da TV ou assista no tablet, laptop, celular e
           outros aparelhos. Além disso, nossa plataforma permite que você
           assista em diferentes aparelhos e locais ao mesmo tempo. Nossa seleção
@@ -79,14 +87,18 @@
 
     <section class="secundario lado-a-lado">
       <div class="container__descricao">
-        <h2 class="descricao__titulo">Procurou, achou!</h2>
-        <p class="descricao__texto">
+        <h2 class="descricao__titulo" data-lang="search-find">
+          Procurou, achou!
+        </h2>
+        <p class="descricao__texto" data-lang="search-find-description">
           Só o PulsePlay oferece
           <span>o melhor conteúdo em um só lugar</span>. Assista suas séries,
           animes e filmes preferidos em um só lugar. Com a PulsePlay, você terá
           acesso a todos os seus conteúdos em um só lugar.
         </p>
-        <a class="secundario__botao" href="#">Assine a PulsePlay</a>
+        <a class="secundario__botao" href="#" data-lang="subscribe"
+          >Assine a PulsePlay</a
+        >
       </div>
       <img
         src="img/varias series juntas.jpg"
@@ -101,59 +113,80 @@
         alt="Telas de streaming abertas"
         class="secundario__imagem"
       />
-      <div class="container__descricao">
+      <div class="container__descricao" data-lang="download">
         <h2 class="descricao__titulo">Baixe suas séries favoritas</h2>
-        <p class="descricao__texto">
+        <p class="descricao__texto" data-lang="download-description">
           Faça o download do nosso app mobile e assista quando e onde quiser.
           Assim, seus filmes e séries favoritos vão estar sempre com você, até
           mesmo sem internet você nunca vai deixar de aproveitar todos nossos
           benefícios.
         </p>
-        <a class="secundario__botao" href="#">Baixe o App</a>
+        <a class="secundario__botao" href="#" data-lang="download-app"
+          >Baixe o App</a
+        >
       </div>
     </section>
 
     <section id="high-movies">
-        <div class="container">
-          <h2>Filmes em Alta</h2>
-          <div class="movie-slider">
-            <div class="movie-card">
-              <img src="./img/filme1.webp" alt="Filme 1" />
-              <div class="movie-info">
-                <h3>Filme 1</h3>
-              </div>
-            </div>
-            <div class="movie-card">
-              <img src="./img/filme2.webp" alt="Filme 2" />
-              <div class="movie-info">
-                <h3>Filme 2</h3>
-              </div>
-            </div>
-            <div class="movie-card">
-              <img src="./img/filme3.webp" alt="Filme 3" />
-              <div class="movie-info">
-                <h3>Filme 3</h3>
-              </div>
-            </div>
-            <div class="movie-card">
-              <img src="./img/filme4.webp" alt="Filme 4" />
-              <div class="movie-info">
-                <h3>Filme 4</h3>
-              </div>
-            </div>
+      <h2 class="title-movie" data-lang="high-movies">Filmes em alta</h2>
+      <div class="high-movies-slider">
+        <div class="slider-container">
+          <div class="slide">
+            <img src="./img/filme1.webp" alt="Filme 1" />
+            <p class="movie-title">#<span class="movie-number">1</span></p>
+            <img src="./img/filme2.jpg" alt="Filme 2" />
+            <p class="movie-title">#<span class="movie-number">2</span></p>
+            <img src="./img/filme3.webp" alt="Filme 3" />
+            <p class="movie-title">#<span class="movie-number">3</span></p>
+            <img src="./img/filme4.webp" alt="Filme 4" />
+            <p class="movie-title">#<span class="movie-number">4</span></p>
+            <img src="./img/filme5.webp" alt="Filme 5" />
+            <p class="movie-title">#<span class="movie-number">5</span></p>
+            <img src="./img/filme6.jpg" alt="Filme 6" />
+            <p class="movie-title">#<span class="movie-number">6</span></p>
+            <img src="./img/filme7.jpg" alt="Filme 7" />
+            <p class="movie-title">#<span class="movie-number">7</span></p>
+            <img src="./img/filme8.jpg" alt="Filme 8" />
+            <p class="movie-title">#<span class="movie-number">8</span></p>
+            <img src="./img/filme9.jpg" alt="Filme 9" />
+            <p class="movie-title">#<span class="movie-number">9</span></p>
+            <img src="./img/filme10.webp" alt="Filme 10" />
+            <p class="movie-title10">#<span class="movie-number">10</span></p>
           </div>
-          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+          <div class="slide">
+            <img src="./img/filme1.webp" alt="Filme 1" />
+            <p class="movie-title">#<span class="movie-number">1</span></p>
+            <img src="./img/filme2.jpg" alt="Filme 2" />
+            <p class="movie-title">#<span class="movie-number">2</span></p>
+            <img src="./img/filme3.webp" alt="Filme 3" />
+            <p class="movie-title">#<span class="movie-number">3</span></p>
+            <img src="./img/filme4.webp" alt="Filme 4" />
+            <p class="movie-title">#<span class="movie-number">4</span></p>
+            <img src="./img/filme5.webp" alt="Filme 5" />
+            <p class="movie-title">#<span class="movie-number">5</span></p>
+            <img src="./img/filme6.jpg" alt="Filme 6" />
+            <p class="movie-title">#<span class="movie-number">6</span></p>
+            <img src="./img/filme7.jpg" alt="Filme 7" />
+            <p class="movie-title">#<span class="movie-number">7</span></p>
+            <img src="./img/filme8.jpg" alt="Filme 8" />
+            <p class="movie-title">#<span class="movie-number">8</span></p>
+            <img src="./img/filme9.jpg" alt="Filme 9" />
+            <p class="movie-title">#<span class="movie-number">9</span></p>
+            <img src="./img/filme10.webp" alt="Filme 10" />
+            <p class="movie-title10">#<span class="movie-number">10</span></p>
+          </div>
         </div>
-      </section>
-      
+      </div>
+    </section>
 
     <section class="faq">
-      <h2 class="faq__titulo">Perguntas Frequentes</h2>
+      <h2 class="faq__titulo" data-lang="faq-title">Perguntas Frequentes</h2>
       <div class="faq__container">
         <div class="faq__item">
-          <div class="faq__pergunta">Como posso assinar o PulsePlay?</div>
-          <div class="faq__resposta">
+          <div class="faq__pergunta" data-lang="faq1-q">
+            Como posso assinar o PulsePlay?
+          </div>
+          <div class="faq__resposta" data-lang="faq1-a">
             <p>
               Para assinar o PulsePlay, clique no botão "Assine o plano anual"
               ou "Assinar o plano mensal" em nossa página principal e siga as
@@ -162,8 +195,10 @@
           </div>
         </div>
         <div class="faq__item">
-          <div class="faq__pergunta">Qual é a política de cancelamento?</div>
-          <div class="faq__resposta">
+          <div class="faq__pergunta" data-lang="faq2-q">
+            Qual é a política de cancelamento?
+          </div>
+          <div class="faq__resposta" data-lang="faq2-a">
             <p>
               Você pode cancelar sua assinatura a qualquer momento através das
               configurações da sua conta. Para mais detalhes, consulte nossa
@@ -171,49 +206,136 @@
             </p>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="faq__item">
+          <div class="faq__pergunta" data-lang="faq3-q">
+            O que é o PulsePlay?
+          </div>
+          <div class="faq__resposta" data-lang="faq3-a">
+            <p>
+              O PulsePlay é uma plataforma de streaming que oferece acesso a uma
+              vasta biblioteca de filmes, séries, documentários, e conteúdos
+              exclusivos, tudo em alta definição e disponível em diversos
+              dispositivos.
+            </p>
+          </div>
+        </div>
 
-    <section class="dispositivos">
-      <h2 class="dispositivos__titulo">
-        Disponível nos seus dispositivos favoritos
-      </h2>
-      <ul class="dispositivos__lista">
-        <li>
-          <img
-            src="img/smart-tv.png"
-            alt="Tela de TV"
-            class="dispositivos__imagem"
-          />
-          <h3 class="lista__item">TV</h3>
-        </li>
-        <li>
-          <img
-            src="img/jogos.png"
-            alt="Tela de Computador"
-            class="dispositivos__imagem"
-          />
-          <h3 class="lista__item">Computadores</h3>
-        </li>
-        <li>
-          <img
-            src="img/celular.png"
-            alt="Tela de Telefone"
-            class="dispositivos__imagem"
-          />
-          <h3 class="lista__item">Celular</h3>
-        </li>
-      </ul>
+        <div class="faq__item">
+          <div class="faq__pergunta" data-lang="faq4-q">
+            Como faço para baixar conteúdo para assistir offline?
+          </div>
+          <div class="faq__resposta" data-lang="faq4-a">
+            <p>
+              Para baixar conteúdo, basta acessar o vídeo desejado e clicar no
+              ícone de download. O conteúdo ficará disponível na seção "Meus
+              Downloads" do aplicativo e poderá ser assistido offline, sem
+              necessidade de conexão com a internet.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__pergunta" data-lang="faq5-q">
+            Quais são os métodos de pagamento aceitos?
+          </div>
+          <div class="faq__resposta" data-lang="faq5-a">
+            <p>
+              Aceitamos os principais cartões de crédito e débito, como Visa,
+              MasterCard, e American Express, além de pagamentos via PayPal e
+              outros métodos alternativos, dependendo da sua localização.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__pergunta" data-lang="faq6-q">
+            Posso compartilhar minha conta com outras pessoas?
+          </div>
+          <div class="faq__resposta" data-lang="faq6-a">
+            <p>
+              O PulsePlay permite que você crie perfis diferentes dentro de uma
+              mesma conta, além do compartilhamento de contas independente de
+              sua localização de moradia.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__pergunta" data-lang="faq7-q">
+            O PulsePlay está disponível em quais dispositivos?
+          </div>
+          <div class="faq__resposta" data-lang="faq7-a">
+            <p>
+              O PulsePlay pode ser acessado em uma variedade de dispositivos,
+              incluindo smart TVs, computadores, smartphones, tablets, e
+              consoles de videogame. Para uma lista completa de dispositivos
+              compatíveis, consulte a nossa página de suporte.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__pergunta" data-lang="faq8-q">
+            Como posso mudar meu plano de assinatura?
+          </div>
+          <div class="faq__resposta" data-lang="faq8-a">
+            <p>
+              Você pode alterar seu plano de assinatura acessando as
+              configurações da sua conta e selecionando a opção "Mudar Plano".
+              As alterações no plano entrarão em vigor imediatamente ou na
+              próxima data de cobrança, dependendo das condições do novo plano.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__pergunta" data-lang="faq9-q">
+            O PulsePlay oferece um período de teste gratuito?
+          </div>
+          <div class="faq__resposta" data-lang="faq9-a">
+            <p>
+              Sim, oferecemos um período de teste gratuito de 7 dias para novos
+              usuários. Durante o teste, você terá acesso a todas as
+              funcionalidades e conteúdo da plataforma sem qualquer custo. Caso
+              não deseje continuar após o teste, lembre-se de cancelar antes do
+              término do período de 7 dias para evitar cobranças.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__pergunta" data-lang="faq10-q">
+            Como posso entrar em contato com o suporte ao cliente?
+          </div>
+          <div class="faq__resposta" data-lang="faq10-a">
+            <p>
+              Você pode entrar em contato com nosso suporte ao cliente através
+              do chat online disponível 24/7, por e-mail ou telefone. Consulte a
+              página de "Contato" em nosso site para obter todas as informações.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="rodape">
       <ul class="rodape__lista">
-        <li class="lista__link"><a href="#">Dispositivos Compatíveis</a></li>
-        <li class="lista__link"><a href="#">Contrato de assinatura</a></li>
-        <li class="lista__link"><a href="#">Política de Privacidade</a></li>
-        <li class="lista__link"><a href="#">Proteção de Dados no Brasil</a></li>
-        <li class="lista__link"><a href="#">Anúncios Personalizados</a></li>
-        <li class="lista__link"><a href="#">Ajuda</a></li>
+        <li class="lista__link"><a href="#" data-lang="support">Suporte</a></li>
+        <li class="lista__link">
+          <a href="#" data-lang="contact">Entre em contato</a>
+        </li>
+        <li class="lista__link">
+          <a href="#" data-lang="cancellation-policy"
+            >Política de Cancelamento</a
+          >
+        </li>
+        <li class="lista__link"><a href="#" data-lang="account">Conta</a></li>
+        <li class="lista__link">
+          <a href="#" data-lang="terms">Termos de uso</a>
+        </li>
+        <li class="lista__link">
+          <a href="#" data-lang="privacy">Política de Privacidade</a>
+        </li>
       </ul>
       <p class="rodape__texto">® 2024 PulsePlay.com, Inc. ou suas afiliadas.</p>
     </footer>
