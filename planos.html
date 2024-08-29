@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planos.css">
+    <title>PulsePlay - Planos</title>
+</head>
+<body>
+    <section class="principal">
+        <div class="principal__header">
+          <div class="principal__logo">PulsePlay</div>
+          <div class="principal__seletor-linguagem">
+            <label
+              for="seletor-linguagem"
+              class="principal__seletor-linguagem-label"
+              >Selecione o idioma</label
+            >
+            <select
+              id="seletor-linguagem"
+              class="principal__seletor-linguagem-select"
+            >
+              <option value="pt" selected>Português</option>
+              <option value="en">Inglês</option>
+              <option value="es">Espanhol</option>
+            </select>
+          </div>
+        </div>
+    <div class="container">
+        <div class="header">
+            <h1>Escolha seu plano</h1>
+            <p>Assista sucessos de bilheteira, produções originais inéditas e favoritos da família.</p>
+        </div>
+
+        <div class="plan-options">
+            <div class="plan-option-wrapper">
+                <button class="plan-option" id="annual-button">Anual parcelado</button>
+                <span class="info-text">Economize ate 36%</span>
+            </div>
+            <button class="plan-option" id="monthly-button">Mensal</button>
+            <div class="line"></div>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel__inner">
+                <div class="carousel__item">
+                    <h2>Básico com anúncios</h2>
+                    <p class="price">Parcele em até 12 vezes</p>
+                    <div class="plan-details">
+                        <p class="monthly-price">12x R$10,90 /mês</p>
+                        <p class="annual-price">Preço anual total R$130,80</p>
+                        <ul>
+                            <li>2 dispositivos ao mesmo tempo</li>
+                            <li>Resolução de vídeo Full HD</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__item">
+                    <h2>Standard</h2>
+                    <div class="plan-details">
+                        <p class="monthly-price">12x R$20,90 /mês</p>
+                        <p class="annual-price">Preço anual total R$250,80</p>
+                        <ul>
+                            <li>2 dispositivos ao mesmo tempo</li>
+                            <li>Resolução de vídeo Full HD</li>
+                            <li>30 downloads para curtir off-line</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel__item">
+                    <h2>Platinum</h2>
+                    <div class="plan-details">
+                        <p class="monthly-price">12x R$29,90 /mês</p>
+                        <p class="annual-price">Preço anual total R$358.80</p>
+                        <ul>
+                            <li>4 dispositivos ao mesmo tempo</li>
+                            <li>Resolução Full HD e 4K Ultra HD *</li>
+                            <li>Áudio Dolby Atmos *</li>
+                            <li>100 downloads para curtir off-line</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="note">*Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e Platinum pode conter anúncios. Downloads podem ter restrições em algumas categorias de conteúdo. Saiba mais em <a href="https://help.Pulse.com/plans" target="_blank">help.Pulse.com/plans</a></p>
+
+        <button class="carousel__button--continue">Continuar</button>
+    </div>
+    <script src="planos.js" defer></script>
+    <footer class="rodape">
+        <ul class="rodape__lista">
+          <li class="lista__link"><a href="#">Dispositivos Compatíveis</a></li>
+          <li class="lista__link"><a href="#">Contrato de assinatura</a></li>
+          <li class="lista__link"><a href="#">Política de Privacidade</a></li>
+          <li class="lista__link"><a href="#">Proteção de Dados no Brasil</a></li>
+          <li class="lista__link"><a href="#">Anúncios Personalizados</a></li>
+          <li class="lista__link"><a href="#">Ajuda</a></li>
+        </ul>
+        <p class="rodape__texto">® 2024 PulsePlay.com, Inc. ou suas afiliadas.</p>
+      </footer>
+</body>
+</html>
